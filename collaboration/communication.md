@@ -35,9 +35,11 @@ ______________________________________________________________________
 ------ | :----: | :-----: | :-------: | :------: | :----: | :------: | :----: |
 **Madiha**| Monday &check;| Tuesday &check;| Wednesday &check;| Thursday &check;| Friday &check;| Saturday &check;| Sunday &check;|  |
 
+**Mojtaba**| Monday &check;| Tuesday &check;| Wednesday &check;| Thursday &check;| Friday &check;| Saturday &check;| Sunday &check;|  |
+
 ### How many hours everyone has per day
 
-- name: _5h_;
+- Mojtaba: _5h_;
 - name: _6h_;
 - Madiha: _5h_;
 - name: _4h_;
