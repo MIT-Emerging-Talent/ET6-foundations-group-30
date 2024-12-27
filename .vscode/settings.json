@@ -46,6 +46,9 @@
   // Configures if the built-in HTML language suggests HTML5 tags, properties and values.
   "html.suggest.html5": true,
 
+    // Python Settings
+  "python.envFile": "${workspaceFolder}/.env",
+
   // Defines a default HTML formatter which takes precedence over all other formatter settings. Must be the identifier of an extension contributing a formatter
   "[html]": {
     "editor.defaultFormatter": "vscode.html-language-features"
