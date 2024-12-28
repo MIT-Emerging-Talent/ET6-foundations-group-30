@@ -1,4 +1,3 @@
-
 # Constraints
 
 This section outlines the boundaries and considerations for our project to
@@ -15,7 +14,7 @@ ensure smooth collaboration, efficient learning, and effective task completion.
     documentation, and clear variable names).
 
 - **Deadlines:**
-  - Projects must be completed according to the timeline set by the MIT Emerging
+  - Projects must be completed according to the timeline set by the MIT Emerging 
     Talent program.
   - Each member must solve and review problems within the agreed-upon timeframes.
 
