@@ -1,10 +1,10 @@
 ---
 name: help wanted 
-about: >
+about: > 
   A template issue for when you're blocked on certain lines of code. 
-  This template has many sections to get you thinking about your problem, you don't need to fill all of them.
+  This template has many sections to get you thinking about your problem, 
+  you don't need to fill all of them. 
 labels: "help wanted"
-
 ---
 
 <!--
@@ -14,7 +14,7 @@ labels: "help wanted"
   - assign: anyone you would like help from
 -->
 
-## The Code
+# The Code
 
 <!--
   The code you have a question about (it doesn't need to be your code!). This can

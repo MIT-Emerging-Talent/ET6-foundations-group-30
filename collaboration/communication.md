@@ -1,3 +1,4 @@
+
 # Communication Channels
 
 How often will we get in touch on each channel, and what we will discuss there:
@@ -9,7 +10,9 @@ How often will we get in touch on each channel, and what we will discuss there:
 
 ---
 
-## Availability
+
+All technical discussions will be conducted on Slack. General discussions will
+use WhatsApp.
 
 ### Availability for Calling/Messaging
 

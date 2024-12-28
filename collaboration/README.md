@@ -23,6 +23,7 @@ and connected throughout the journey.
 ### 3. Technical Meetings
 
 - Use **Slack** for technical discussions and project updates.  
+
 - Use **WhatsApp** for urgent matters and quick clarifications.
 
 ### 4. Reminders for Code Review
@@ -47,6 +48,7 @@ and connected throughout the journey.
 ### 7. Create a Safe Feedback Culture
 
 - Encourage constructive feedback to improve team performance.  
+
 - Focus on solutions rather than blame when giving or receiving feedback.
 
 ### 8. Clear Handoffs When Required

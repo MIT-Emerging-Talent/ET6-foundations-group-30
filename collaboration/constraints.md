@@ -19,6 +19,7 @@ to ensure smooth collaboration, efficient learning, and effective task completio
 - **Platform Requirements:**
   - Problems must be selected from the workshop's exercises, CodeWars, LeetCode,
     or similar coding platforms.
+
   - Solutions must comply with the workshop's requirements (e.g., unit tests,
     documentation, and clear variable names).
 
@@ -31,6 +32,7 @@ to ensure smooth collaboration, efficient learning, and effective task completio
   - GitHub must be used for version control, communication, and documentation.
   - The team must rely on publicly available resources (e.g., online tutorials and
     documentation) to enhance learning.
+
 
 ## Internal Constraints: Involuntary
 
@@ -74,6 +76,7 @@ and learning outcomes.**
     cases.
   - Use Python’s `unittest` module (or equivalent) for testing.
 
+
 - **Documentation Standards:**
   - All code must include meaningful comments explaining the logic.
   - Problem solutions must include documentation with:
@@ -89,4 +92,6 @@ and learning outcomes.**
 - **Collaborative Learning:**
   - Each member must share insights or challenges they faced during problem-solving
     to help others learn.
+
   - Regular check-ins (via GitHub comments or virtual meetings) to ensure alignment.
+

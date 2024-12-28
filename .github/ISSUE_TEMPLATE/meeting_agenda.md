@@ -1,9 +1,10 @@
 ---
 name: meeting agenda 
 about: A template issue for planning meetings 
-title: "Agenda: __" 
+title: "Agenda: \_\_" 
 labels: agenda
 ---
+
 
 <!-- Make your issue easy to find:
 
