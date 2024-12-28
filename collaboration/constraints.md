@@ -1,70 +1,79 @@
 # Constraints
 
-This section outlines the boundaries and considerations for our project to 
+This section outlines the boundaries and considerations for our project to
 ensure smooth collaboration, efficient learning, and effective task completion.
 
 ## External Constraints
 
 **These factors outside our control influence how we work on this project.**
 
-- **Platform Requirements:**
-  - Problems must be selected from the workshop's exercises, CodeWars, LeetCode, 
-    or similar coding platforms.
-  - Solutions must comply with the workshop's requirements (e.g., unit tests, 
-    documentation, and clear variable names).
+### Platform Requirements
 
-- **Deadlines:**
-  - Projects must be completed according to the timeline set by the MIT Emerging 
-    Talent program.
-  - Each member must solve and review problems within the agreed-upon timeframes.
+- Problems must be selected from the workshop's exercises, CodeWars, LeetCode, or
+  similar coding platforms.
+- Solutions must comply with the workshop's requirements (e.g., unit tests,
+  documentation, and clear variable names).
 
-- **Tools and Resources:**
-  - GitHub must be used for version control, communication, and documentation.
-  - The team must rely on publicly available resources (e.g., online tutorials 
-    and documentation) to enhance learning.
+### Deadlines
+
+- Projects must be completed according to the timeline set by the MIT Emerging
+  Talent program.
+- Each member must solve and review problems within the agreed-upon timeframes.
+
+### Tools and Resources
+
+- GitHub must be used for version control, communication, and documentation.
+- The team must rely on publicly available resources (e.g., online tutorials and
+  documentation) to enhance learning.
 
 ## Internal Constraints: Involuntary
 
-**These are limitations or challenges within the team that we need to navigate 
+**These are limitations or challenges within the team that we need to navigate
 effectively.**
 
-- **Experience Levels:**
-  - Team members have varying levels of experience in programming, unit testing, 
-    and documentation.
-  - Some members may require more time or support to complete tasks.
+### Experience Levels
 
-- **Availability:**
-  - Team members may have different schedules and commitments, limiting 
-    synchronous collaboration opportunities.
+- Team members have varying levels of experience in programming, unit testing,
+  and documentation.
+- Some members may require more time or support to complete tasks.
 
-- **Technical Skills:**
-  - Limited familiarity with tools like Git, GitHub workflows, or unit testing 
-    frameworks.
+### Availability
+
+- Team members may have different schedules and commitments, limiting
+  synchronous collaboration opportunities.
+
+### Technical Skills
+
+- Limited familiarity with tools like Git, GitHub workflows, or unit testing
+  frameworks.
 
 ## Internal Constraints: Voluntary
 
-**These are self-imposed rules or boundaries designed to improve collaboration 
+**These are self-imposed rules or boundaries designed to improve collaboration
 and learning outcomes.**
 
-- **Unit Testing:**
-  - All submitted solutions must include unit tests to verify correctness and 
-    edge cases.
-  - Use Python’s `unittest` module (or equivalent) for testing.
+### Unit Testing
 
-- **Documentation Standards:**
-  - All code must include meaningful comments explaining the logic.
-  - Problem solutions must include documentation with:
-    - Problem description.
-    - Approach and thought process.
-    - Test cases used.
+- All submitted solutions must include unit tests to verify correctness and
+  edge cases.
+- Use Python's `unittest` module (or equivalent) for testing.
 
-- **Communication Protocols:**
-  - Use GitHub Issues to discuss problems and tasks.
-  - At least one other member must review pull requests before merging.
-  - Constructive feedback is required for all reviews.
+### Documentation Standards
 
-- **Collaborative Learning:**
-  - Each member must share insights or challenges they faced during 
-    problem-solving to help others learn.
-  - Regular check-ins (via GitHub comments or virtual meetings) to ensure 
-    alignment.
+- All code must include meaningful comments explaining the logic.
+- Problem solutions must include documentation with:
+  - Problem description.
+  - Approach and thought process.
+  - Test cases used.
+
+### Communication Protocols
+
+- Use GitHub Issues to discuss problems and tasks.
+- At least one other member must review pull requests before merging.
+- Constructive feedback is required for all reviews.
+
+### Collaborative Learning
+
+- Each member must share insights or challenges they faced during problem-
+  solving to help others learn.
+- Regular check-ins (via GitHub comments or virtual meetings) to ensure alignment.
