@@ -1,6 +1,6 @@
 # Constraints
 
-This section outlines the boundaries and considerations for our project to
+This section outlines the boundaries and considerations for our project to 
 ensure smooth collaboration, efficient learning, and effective task completion.
 
 ## External Constraints
@@ -25,7 +25,7 @@ ensure smooth collaboration, efficient learning, and effective task completion.
 
 ## Internal Constraints: Involuntary
 
-**These are limitations or challenges within the team that we need to navigate
+**These are limitations or challenges within the team that we need to navigate 
 effectively.**
 
 - **Experience Levels:**
@@ -43,7 +43,7 @@ effectively.**
 
 ## Internal Constraints: Voluntary
 
-**These are self-imposed rules or boundaries designed to improve collaboration
+**These are self-imposed rules or boundaries designed to improve collaboration 
 and learning outcomes.**
 
 - **Unit Testing:**
