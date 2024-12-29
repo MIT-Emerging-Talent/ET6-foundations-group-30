@@ -30,8 +30,7 @@ class TestRemoveEveryOther(unittest.TestCase):
         """
         Test that it works with mixed-type lists.
         """
-        self.assertEqual(remove_every_other(
-            [1, "Two", 3, "Four", 5]), [1, 3, 5])
+        self.assertEqual(remove_every_other([1, "Two", 3, "Four", 5]), [1, 3, 5])
 
     def test_large_list(self):
         """
