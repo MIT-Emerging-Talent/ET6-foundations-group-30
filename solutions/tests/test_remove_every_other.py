@@ -3,7 +3,7 @@
 Tests for the remove_every_other function.
 """
 import unittest
-from remove_every_other import remove_every_other
+from solutions.remove_every_other import remove_every_other  # Updated import
 
 
 class TestRemoveEveryOther(unittest.TestCase):
