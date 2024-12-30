@@ -1,4 +1,5 @@
 # tests/test_remove_every_other.py
+
 """
 Tests for the remove_every_other function.
 """
