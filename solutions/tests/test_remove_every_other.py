@@ -3,6 +3,7 @@
 """
 Tests for the remove_every_other function.
 """
+
 import unittest
 from solutions.remove_every_other import remove_every_other
 
