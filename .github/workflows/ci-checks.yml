@@ -63,9 +63,13 @@ jobs:
       - name: Check for test files
         id: check_tests
         run: |
-          if find . -type f -name "test_*.py" | grep -q .; then
+          test_files=$(find ./solutions/tests -type f -name "test_*.py")
+          if [ -n "$test_files" ]; then
+            echo "Found test files:"
+            echo "$test_files"
             echo "has_tests=true" >> $GITHUB_OUTPUT
           else
+            echo "No test files found matching pattern ./solutions/tests/test_*.py"
             echo "has_tests=false" >> $GITHUB_OUTPUT
           fi
         shell: bash

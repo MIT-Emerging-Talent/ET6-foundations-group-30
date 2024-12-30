@@ -12,9 +12,9 @@ about: A template PR for code review with a checklist
 
 <!-- describe the challenge you will solve -->
 
-## Behavior
+# Behavior
 
-### Files
+## Files
 
 - [ ] The file name describes the function's behavior
 - [ ] There is a module docstring in the function file

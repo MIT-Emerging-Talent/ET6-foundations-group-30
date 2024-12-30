@@ -14,7 +14,7 @@ labels: "help wanted"
   - assign: anyone you would like help from
 -->
 
-## The Code
+# The Code
 
 <!--
   The code you have a question about (it doesn't need to be your code!). This can

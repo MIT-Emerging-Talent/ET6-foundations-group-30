@@ -13,7 +13,8 @@ about: >
 -->
 
 <!-- 
-  Describe the challenge's _behavior_ so someone can start solving it without asking for clarification.
+  Describe the challenge's _behavior_ so someone can start solving it without 
+  asking for clarification.
   Do not describe a _strategy_ or an _implementation_!  
   Others are free to solve the behavior however they like.
 -->
