@@ -5,3 +5,5 @@ venv/
 *.db
 *.idea
 *.ruff_cache
+
+.codegpt
