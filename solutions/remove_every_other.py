@@ -1,8 +1,8 @@
 # remove_every_other.py
 
 """
-Module: remove_every_other
-Author: Mojtaba Fayyaz
+Module:  remove_every_other
+Author:  Mojtaba Fayyaz
 Date: 2024-12-29
 
 This module provides a utility function to remove every second element from a list.
