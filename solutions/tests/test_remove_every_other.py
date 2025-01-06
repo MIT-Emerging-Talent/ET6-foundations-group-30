@@ -1,5 +1,5 @@
 """
-This module contains unit tests for the `remove_every_other` function.
+This module contains unit tests for the remove_every_other function.
 
 The tests cover various scenarios to ensure the function behaves correctly,
 including edge cases (e.g., empty lists, single-element lists),
