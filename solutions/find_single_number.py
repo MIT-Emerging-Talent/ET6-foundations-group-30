@@ -34,11 +34,6 @@ def find_single_number(numbers: list[int]) -> int:
         >>> find_single_number([1])
         1
 
-    Example:
-        nums = [4, 1, 2, 1, 2]
-        print(find_single_number(nums))
-        # Output: 4
-
     Defensive Assertions:
         - Ensures the input is a list of integers.
     """
