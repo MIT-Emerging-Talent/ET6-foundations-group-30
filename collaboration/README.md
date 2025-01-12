@@ -66,5 +66,5 @@ further delays.
 ### 10. Responsiveness and Accountability
 
 - While everyone has different schedules, acknowledging messages on Slack or
-WhatsApp—even with a brief reply—helps keep the team informed and connected.
+  WhatsApp even with a brief reply—helps keep the team informed and connected.
 - This ensures smooth collaboration and demonstrates respect for everyone’s efforts.
