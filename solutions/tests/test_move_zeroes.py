@@ -1,4 +1,3 @@
-
 """
 Unit tests for the moveZeroes function.
 Test Categories:
@@ -18,6 +17,7 @@ Author: Mudassra Taskeen
 
 import unittest
 from ..move_zeroes import move_zeroes
+
 
 class TestMoveZeroes(unittest.TestCase):
     """Test cases for moveZeroes function."""
@@ -72,7 +72,8 @@ class TestMoveZeroes(unittest.TestCase):
     def test_non_integer_elements(self):
         """It should raise AssertionError for non-integer elements in the list."""
         with self.assertRaises(AssertionError):
-            move_zeroes([1, 'a', 0])
+            move_zeroes([1, "a", 0])
+
 
 if __name__ == "__main__":
     unittest.main()
