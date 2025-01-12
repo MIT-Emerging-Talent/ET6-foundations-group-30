@@ -37,16 +37,27 @@ class TestFindSingleNumber(unittest.TestCase):
             find_single_number([1.5, 2, 2, 1.5, 3])
 
     def test_positive_and_negative_integers(self):
-        """It should correctly identify the single number with both positive and negative integers."""
+        """
+        It should correctly identify the single number with both positive and negative integers.
+        """
         self.assertEqual(find_single_number([-1, 2, -1, 3, 2]), 3)
 
     def test_includes_zero(self):
-        """It should correctly identify the single number in a list that includes zero."""
+        """
+        It should correctly identify the single number in a list that includes zero.
+        """
         self.assertEqual(find_single_number([0, 1, 0, -2, -2]), 1)
 
     def test_all_negative_numbers(self):
-        """It should correctly identify the single number when all elements are negative."""
+        """
+        It should correctly identify the single number when all elements are negative.
+        """
         self.assertEqual(find_single_number([-3, -1, -3, -2, -2]), -1)
+
+    def test_empty_list(self):
+        """It should raise an error or handle the case gracefully if the input list is empty."""
+        with self.assertRaises(ValueError):
+            find_single_number([])
 
 
     def test_invalid_input(self):
