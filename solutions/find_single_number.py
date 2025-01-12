@@ -59,7 +59,9 @@ def find_single_number(numbers: list[int]) -> int:
     single_number = 0
 
     for current_number in numbers:
+
         single_number ^= (
+            
             current_number  # XOR operation, all duplicate numbers cancel out
         )
 
