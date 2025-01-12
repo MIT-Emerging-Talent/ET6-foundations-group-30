@@ -1,40 +1,60 @@
-# Learning Goals
+# 🎯 Learning Goals
 
 ## Collective
 
-1. **Cultivate Collaboration & Communication**
-   - Use GitHub tools (issues, pull requests, project boards) for structured teamwork.
-   - Write actionable, clear issues with helpful resources.
-   - Continuously update project board to reflect progress and support problem-solving.
-   - Develop and maintain a clear communication plan for effective collaboration.
-   - Use branches strategically to organize tasks and streamline development,
-     for smooth collaboration and progress.
+1. Practice using Git and GitHub for collaboration, project management and code review.
+2. ⁠Improve Python skills by writing clean code, proper documentation
+and relevant tests.
+3. ⁠Develop collaboration skills by working effectively as a team.
 
-2. **Manage GitHub Workflows**
-   - Configure repositories, collaboration features, and best practices for team
-     workflows.
-
-3. **Nurture Team Synergy**
-   - Build cognitive and emotional trust, and repair trust when needed.
-   - Balance discussion and debate effectively.
-   - Prioritize idea generation and critical evaluation.
-  
-4. **Enhance Tool Proficiency**
-   - Improve understanding of VSCode, CLI, Git, and GitHub for development,
-     debugging, and collaboration.
-   - Practice making atomic, focused commits with clear commit messages
-     for better code history and easier code review.
-
-5. **Improve Python Skills**
-     - Write clean, modular, and well-documented Python code, adhering to best practices.
-     - Debug and optimize code for efficiency.
-     - Write and implement relevant unit test cases using Python’s unittest for
-       code reliability and maintenance
-     - Practice Test-Driven Development (TDD).
-
-6. **Improve Collaboration Through Feedback and Reflection**
-   - Focus on actionable and constructive feedback for team behaviour.
-   - Reflect on team experiences and iterate collaboration processes for
-     continuous improvement.
+---
 
 ## Individual
+
+### **Fatima**
+
+- 👀 Learn proper debugging and code Learn to use GitHub like my seniors whom
+I’ve always admired 🙊
+- Practice debugging 🐞 to debug my brain with these coding errors.
+- ✅ Learn about unittests and doctests (because it's totally new for me🙈)
+- Learn about linting errors and how to resolve them 🔧 (because it caught me
+while making profile readme😂)
+
+### **Shahroz**
+
+- 🐙 Learn to resolve merge conflicts, revert commits, and handle Git branches
+in a team setting.
+- 🐞Improve debugging skills for CI/CD pipelines, especially formatting
+and linting issues.
+- Use GitHub  better for managing pull requests, issues, and tasks.
+- 🐍 Document code and changes simply and clearly for team understanding.
+
+### **Jola**
+
+- 🐿️ Practice atomic commits
+- 🤓 Write comments that explain strategy not state the obvious
+- ✨ Improve detail-orientation and effective communication
+
+### **Mojtaba**
+
+- 🐍 Practice testing my code with simple unit tests to catch bugs early.
+- 🐞 Learn how to debug  effectively to fix issues quickly and improve code quality.
+- Learn how to commit changes with clear, meaningful messages.
+- 🐙Review teammates' code constructively and offer supportive feedback.
+- 🧑‍💻 Handle merge conflicts smoothly  and stay organized using the project board.
+- 💪 Build on teamwork, leadership, critical thinking, and problem-solving skills.
+- 🤝 Complete tasks and deliverables on time  while maintaining quality.
+
+### **Madiha**
+
+👩‍💻 Practice algorithms and debugging to improve problem-solving skills and
+code quality.
+
+### Mudassra
+
+- 🌟 Learn to manage workflows with GitHub Actions, project boards, and efficient
+branching strategies. GitHub used to be a Ghost House👻for me, I always wanted to
+escape from it. ✨
+- 👩🏻‍💻 Learn about debugging 🐞, unit tests, doctests, and
+docstrings to ensure high code quality📈. I thought these terms were only
+understood by professional programmers.
