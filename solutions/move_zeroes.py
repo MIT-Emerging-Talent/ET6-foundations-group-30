@@ -34,6 +34,11 @@ def move_zeroes(nums: List[int]) -> None:
         >>> move_zeroes(nums)
         >>> nums
         [0]
+        
+        >>> nums = [4, 0, 5, 0, 6]
+        >>> move_zeroes(nums)
+        >>> print(nums)
+        [4, 5, 6, 0, 0]
     """
 
     # Defensive assertions
