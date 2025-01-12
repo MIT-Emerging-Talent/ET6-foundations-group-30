@@ -8,15 +8,19 @@ This module provides a function to find the single number in a list where all ot
 """
 
 
-def find_single_number(nums: list[int]) -> int:
+def find_single_number(numbers: list[int]) -> int:
     """
     Returns the number that appears only once in the list, where all other numbers appear twice.
 
     Parameters:
-        nums (list[int]): A list of integers where every element appears twice except for one.
+        numbers (list[int]): A list of integers where every element appears twice except for one.
 
     Returns:
         int: The single number that appears only once.
+
+    Raises:
+        ValueError: If the input list is empty.
+        TypeError: If the input is not a list or contains non-integer elements.
 
     Assumptions:
         - The input is always a list of integers.
@@ -39,13 +43,23 @@ def find_single_number(nums: list[int]) -> int:
     Defensive Assertions:
         - Ensures the input is a list of integers.
     """
-    assert isinstance(nums, list), "Input must be a list"
-    assert all(isinstance(i, int) for i in nums), (
-        "All elements in the list must be integers"
-    )
+    # Check for valid input type
+    if not isinstance(numbers, list):
+        raise TypeError("Input must be a list")
 
-    result = 0
-    for num in nums:
-        result ^= num  # XOR operation, all duplicate numbers cancel out
+    # Ensure list is not empty
+    if len(numbers) == 0:
+        raise ValueError("List cannot be empty")
 
-    return result
+    # Ensure all elements are integers
+    if not all(isinstance(current_number, int) for current_number in numbers):
+        raise TypeError("Each element must be an integer")
+
+    # Logic to find the single number
+    single_number = 0
+    for current_number in numbers:
+        single_number ^= (
+            current_number  # XOR operation, all duplicate numbers cancel out
+        )
+
+    return single_number

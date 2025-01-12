@@ -16,6 +16,7 @@ Created on: 2025-01-07
 import unittest
 from find_single_number import find_single_number
 
+
 class TestFindSingleNumber(unittest.TestCase):
     """
     Unit tests for the `find_single_number` function.
@@ -52,12 +53,13 @@ class TestFindSingleNumber(unittest.TestCase):
         with self.assertRaises(ValueError):
             find_single_number([])
 
-    def test_single_number_with_floats(self):
-        """
-        It should raise an error for lists containing floating-point numbers.
-        """
-        with self.assertRaises(AssertionError):
-            find_single_number([1.5, 2, 2, 1.5, 3])
+
+def test_single_number_with_floats(self):
+    """
+    It should raise an error for lists containing floating-point numbers.
+    """
+    with self.assertRaises(TypeError):
+        find_single_number([1.5, 2, 2, 1.5, 3])
 
     # Special Cases
     def test_invalid_input(self):
