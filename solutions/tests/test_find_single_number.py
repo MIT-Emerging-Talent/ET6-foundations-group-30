@@ -6,7 +6,7 @@ Created on: 2025-01-07
 """
 
 import unittest
-from find_single_number import find_single_number
+from ..find_single_number import find_single_number
 
 
 class TestFindSingleNumber(unittest.TestCase):
