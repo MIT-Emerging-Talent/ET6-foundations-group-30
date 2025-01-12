@@ -10,6 +10,7 @@ Date: 2025-01-08
 
 from typing import List
 
+
 def move_zeroes(nums: List[int]) -> None:
     """
     Move all 0's to the end of the input list in-place while maintaining the relative sequence of non-zero elements.
@@ -37,7 +38,9 @@ def move_zeroes(nums: List[int]) -> None:
 
     # Defensive assertions
     assert isinstance(nums, List), "Input must be of type List"
-    assert all(isinstance(x, int) for x in nums), "All elements in the list must be integers"
+    assert all(isinstance(x, int) for x in nums), (
+        "All elements in the list must be integers"
+    )
 
     # Initialize a pointer for the position of the next non-zero element
     nz = 0
@@ -46,7 +49,6 @@ def move_zeroes(nums: List[int]) -> None:
 
     for i in range(len(nums)):
         if nums[i] != 0:
-
             # Swap the current element with the element at nz
 
             nums[nz], nums[i] = nums[i], nums[nz]
