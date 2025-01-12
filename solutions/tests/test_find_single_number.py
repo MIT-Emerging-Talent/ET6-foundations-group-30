@@ -49,5 +49,5 @@ class TestFindSingleNumber(unittest.TestCase):
         self.assertEqual(find_single_number(nums), 1001)
 
 
-if __name__ == "_main_":
+if __name__ == "__main__":
     unittest.main()
