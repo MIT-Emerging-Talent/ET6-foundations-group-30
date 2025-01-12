@@ -29,17 +29,25 @@ class TestFindSingleNumber(unittest.TestCase):
         """
         self.assertEqual(find_single_number([1]), 1)
 
-    def test_two_elements(self):
+    def test_single_number_with_floats(self):
         """
-        Test the case when there are two elements in the list.
+        It should raise an error for lists containing floating-point numbers.
         """
-        self.assertEqual(find_single_number([2, 2, 1]), 1)
+        with self.assertRaises(AssertionError):
+            find_single_number([1.5, 2, 2, 1.5, 3])
 
-    def test_multiple_elements(self):
-        """
-        Test the case when there are multiple elements with one unique element.
-        """
-        self.assertEqual(find_single_number([4, 1, 2, 1, 2]), 4)
+    def test_positive_and_negative_integers(self):
+        """It should correctly identify the single number with both positive and negative integers."""
+        self.assertEqual(find_single_number([-1, 2, -1, 3, 2]), 3)
+
+    def test_includes_zero(self):
+        """It should correctly identify the single number in a list that includes zero."""
+        self.assertEqual(find_single_number([0, 1, 0, -2, -2]), 1)
+
+    def test_all_negative_numbers(self):
+        """It should correctly identify the single number when all elements are negative."""
+        self.assertEqual(find_single_number([-3, -1, -3, -2, -2]), -1)
+
 
     def test_invalid_input(self):
         """
