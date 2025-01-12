@@ -1,40 +1,32 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Tests for the `find_single_number` module.
+Tests for the 'find_single_number' module.
 
-This tests the correctness of the function `find_single_number`:
-    - Different numbers of elements in the input list.
-    - Defensive assertions for invalid inputs.
-    - Boundary cases like empty and large lists.
+Test Categories:
+    - Standard Cases: Regular lists with varying numbers of elements.
+    - Edge Cases: Boundary conditions like empty lists and lists with mixed types.
+    - Special Cases: Lists with floating-point numbers and special characters.
+    - Defensive Cases: Ensuring proper handling of invalid inputs.
 
 Author: Mudassra Taskeen
-Date: 2025-01-07
+Created on: 2025-01-07
 """
 
 import unittest
 from find_single_number import find_single_number
-
-
-
 
 class TestFindSingleNumber(unittest.TestCase):
     """
     Unit tests for the `find_single_number` function.
     """
 
+    # Standard Cases
     def test_single_element(self):
         """
         Test the case when there is only one element in the list.
         """
         self.assertEqual(find_single_number([1]), 1)
-
-    def test_single_number_with_floats(self):
-        """
-        It should raise an error for lists containing floating-point numbers.
-        """
-        with self.assertRaises(AssertionError):
-            find_single_number([1.5, 2, 2, 1.5, 3])
 
     def test_positive_and_negative_integers(self):
         """
@@ -54,12 +46,20 @@ class TestFindSingleNumber(unittest.TestCase):
         """
         self.assertEqual(find_single_number([-3, -1, -3, -2, -2]), -1)
 
+    # Edge Cases
     def test_empty_list(self):
         """It should raise an error or handle the case gracefully if the input list is empty."""
         with self.assertRaises(ValueError):
             find_single_number([])
 
+    def test_single_number_with_floats(self):
+        """
+        It should raise an error for lists containing floating-point numbers.
+        """
+        with self.assertRaises(AssertionError):
+            find_single_number([1.5, 2, 2, 1.5, 3])
 
+    # Special Cases
     def test_invalid_input(self):
         """
         Test the case when input is not a list type.
@@ -74,6 +74,7 @@ class TestFindSingleNumber(unittest.TestCase):
         with self.assertRaises(AssertionError):
             find_single_number([1, "2", 3])
 
+    # Performance/Boundary Cases
     def test_boundary_large_list(self):
         """
         Test boundary case for a large list.
