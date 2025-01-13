@@ -1,5 +1,6 @@
 """
-This module provides a function to move all zeroes in an array to the end while maintaining the relative order of the non-zero elements.
+A module provides a function to move all zeroes in an array to the end
+while maintaining the relative order of the non-zero elements.
 
 Module contents:
     move_zeroes(nums): Rearranges the given list in-place as per the described behavior.
@@ -13,7 +14,8 @@ from typing import List
 
 def move_zeroes(nums: List[int]) -> None:
     """
-    Move all 0's to the end of the input list in-place while maintaining the relative sequence of non-zero elements.
+    Move all 0's to the end of the input list in-place while maintaining
+    the relative sequence of non-zero elements.
 
     Arguments:
         nums (List[int]): The input list of integers.
@@ -33,8 +35,8 @@ def move_zeroes(nums: List[int]) -> None:
         >>> nums = [0]
         >>> move_zeroes(nums)
         >>> nums
-        [0]
-        
+        [0]from typing import list
+
         >>> nums = [4, 0, 5, 0, 6]
         >>> move_zeroes(nums)
         >>> print(nums)
@@ -42,19 +44,16 @@ def move_zeroes(nums: List[int]) -> None:
     """
 
     # Defensive assertions
-    assert isinstance(nums, List), "Input must be of type List"
+    assert isinstance(nums, list), "Input must be of type List"
     assert all(isinstance(x, int) for x in nums), (
         "All elements in the list must be integers"
     )
+    # Implementation: Two-pointer approach
 
-    # Initialize a pointer for the position of the next non-zero element
-    nz = 0
+    non_zero_index = 0
 
-    # Iterate through the list
+    for i, num in enumerate(nums):
+        if num != 0:
+            nums[non_zero_index], nums[i] = nums[i], nums[non_zero_index]
 
-    for i in range(len(nums)):
-        if nums[i] != 0:
-            # Swap the current element with the element at nz
-
-            nums[nz], nums[i] = nums[i], nums[nz]
-            nz += 1
+            non_zero_index += 1
