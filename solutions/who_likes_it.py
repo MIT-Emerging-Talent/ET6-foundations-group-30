@@ -51,7 +51,7 @@ def who_likes_it(names: List[str]) -> str:
     if names_length == 0:
         return "no one likes this"
 
-    # If the list has 1 to 3 names, format them directly in the message.
+    # If the list has 1-3 names, format them directly in the message.
     elif names_length == 1:
         return f"{names[0]} likes this"
 
