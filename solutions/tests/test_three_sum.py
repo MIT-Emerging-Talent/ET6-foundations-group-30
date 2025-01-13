@@ -3,7 +3,7 @@ from solutions.three_sum import three_sum
 
 
 class TestThreeSum(unittest.TestCase):
-    """Unit tests for the three_sum function."""
+    """Unit tests for the `three_sum` function."""
 
     def test_basic_case(self):
         """Test basic example with valid triplets."""
@@ -32,8 +32,8 @@ class TestThreeSum(unittest.TestCase):
     def test_large_input(self):
         """Test with very large input arrays."""
         nums = [1, -1, 0] * 10000
-        # Expecting a valid triplet
-        expected = [[-1, 0, 1]]
+        # Expecting valid triplets: [-1, 0, 1] and [0, 0, 0]
+        expected = [[-1, 0, 1], [0, 0, 0]]
         self.assertEqual(sorted(three_sum(nums)), sorted(expected))
 
     def test_invalid_input(self):
@@ -41,6 +41,18 @@ class TestThreeSum(unittest.TestCase):
         nums = [1, "a", None]
         with self.assertRaises(ValueError):
             three_sum(nums)
+
+    def test_duplicate_triplets(self):
+        """Test to ensure duplicate triplets are not included in the result."""
+        nums = [-1, 0, 1, -1, 0, 1, -1, 0, 1]
+        expected = [[-1, 0, 1]]
+        self.assertEqual(sorted(three_sum(nums)), sorted(expected))
+
+    def test_zero_sum_only(self):
+        """Test input with multiple zeros."""
+        nums = [0, 0, 0, 0, 0]
+        expected = [[0, 0, 0]]
+        self.assertEqual(sorted(three_sum(nums)), sorted(expected))
 
 
 if __name__ == "__main__":
