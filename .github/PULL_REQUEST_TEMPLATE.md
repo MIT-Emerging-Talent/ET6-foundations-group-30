@@ -17,10 +17,12 @@ about: A template PR for code review with a checklist
 ## Files
 
 - [ ] The file name describes the function's behavior
+- [ ] There is a module header in the function file
 - [ ] There is a module docstring in the function file
 - [ ] The test file's name matches the function file name -
   `/tests/test_file_name.py`
 - [ ] There is a module docstring in the tests file
+- [ ] There is a module header in the tests file
 
 ### Unit Tests
 
@@ -54,7 +56,7 @@ about: A template PR for code review with a checklist
 
 - [ ] The function's name describes it's behavior
 - [ ] The function's name matches the file name
-  - _It's ok to have extra helper functions if necessary, like with mergesort_
+  - _It's ok to have extra helper functions, like with mergesort_
 - [ ] The function has correct type annotations
 - [ ] The function is not called at the top level of the function file 
   - _Recursive solutions **can** call the function from **inside** the function body_
@@ -86,6 +88,6 @@ about: A template PR for code review with a checklist
 - [ ] The code follows the strategy as simply as possible
 - [ ] The implementation is as simple as possible given the strategy
 - [ ] There are no commented lines of code
-- [ ] There are no `print` statements anywhere
+- [ ] There are no `print`  or `input` statements anywhere in the function or test files
 - [ ] The code includes defensive assertions
 - [ ] Defensive assertions include as little logic as possible
