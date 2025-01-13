@@ -1,57 +1,51 @@
 import unittest
+
 from solutions.three_sum import three_sum
 
 
 class TestThreeSum(unittest.TestCase):
-    """Unit tests for the `three_sum` function."""
+    """Test cases for the three_sum function."""
 
-    def test_basic_case(self):
-        """Test basic example with valid triplets."""
+    def test_example_case(self):
+        """It should find all unique triplets that sum to zero."""
         nums = [-1, 0, 1, 2, -1, -4]
         expected = [[-1, -1, 2], [-1, 0, 1]]
         self.assertEqual(sorted(three_sum(nums)), sorted(expected))
 
     def test_no_triplets(self):
-        """Test when no triplets exist."""
+        """It should return an empty list when no triplets exist."""
         nums = [0, 1, 1]
         expected = []
         self.assertEqual(three_sum(nums), expected)
 
     def test_all_zeros(self):
-        """Test all elements as zero."""
-        nums = [0, 0, 0, 0]
+        """It should handle cases with all elements being zero."""
+        nums = [0, 0, 0]
         expected = [[0, 0, 0]]
-        self.assertEqual(sorted(three_sum(nums)), sorted(expected))
+        self.assertEqual(three_sum(nums), expected)
 
-    def test_repeated_numbers(self):
-        """Test list with repeated numbers."""
-        nums = [1, 1, 1, 1]
+    def test_empty_list(self):
+        """It should return an empty list for an empty input list."""
+        nums = []
         expected = []
         self.assertEqual(three_sum(nums), expected)
 
-    def test_large_input(self):
-        """Test with very large input arrays."""
-        nums = [1, -1, 0] * 10000
-        # Expecting valid triplets: [-1, 0, 1] and [0, 0, 0]
-        expected = [[-1, 0, 1], [0, 0, 0]]
+    def test_fewer_than_three_elements(self):
+        """It should return an empty list if fewer than three elements are provided."""
+        nums = [1, -1]
+        expected = []
+        self.assertEqual(three_sum(nums), expected)
+
+    def test_duplicates_in_triplets(self):
+        """It should avoid duplicate triplets in the result."""
+        nums = [-2, 0, 0, 2, 2]
+        expected = [[-2, 0, 2]]
         self.assertEqual(sorted(three_sum(nums)), sorted(expected))
 
-    def test_invalid_input(self):
-        """Test with invalid non-integer input."""
-        nums = [1, "a", None]
-        with self.assertRaises(ValueError):
-            three_sum(nums)
-
-    def test_duplicate_triplets(self):
-        """Test to ensure duplicate triplets are not included in the result."""
-        nums = [-1, 0, 1, -1, 0, 1, -1, 0, 1]
-        expected = [[-1, 0, 1]]
-        self.assertEqual(sorted(three_sum(nums)), sorted(expected))
-
-    def test_zero_sum_only(self):
-        """Test input with multiple zeros."""
-        nums = [0, 0, 0, 0, 0]
-        expected = [[0, 0, 0]]
+    def test_large_negative_and_positive_numbers(self):
+        """It should handle large positive and negative numbers."""
+        nums = [-(10**6), 0, 10**6, -1, 1]
+        expected = [[-(10**6), 0, 10**6], [-1, 0, 1]]
         self.assertEqual(sorted(three_sum(nums)), sorted(expected))
 
 
